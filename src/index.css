@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold leading-tight;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .btn {
+    @apply px-6 py-3 rounded-md font-medium transition-all duration-300 transform hover:translate-y-[-2px];
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 dark:bg-primary-400 dark:hover:bg-primary-300 dark:text-dark-500;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white 
+           dark:border-accent dark:text-accent dark:hover:bg-accent dark:hover:text-dark-500;
+  }
+  
+  .nav-link {
+    @apply relative text-dark-400 dark:text-gray-300 hover:text-primary-500 dark:hover:text-accent transition-colors duration-300
+           after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary-500 dark:after:bg-accent
+           after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  .active-nav-link {
+    @apply text-primary-500 dark:text-accent after:w-full;
+  }
+  
+  .section-heading {
+    @apply font-bold text-3xl md:text-4xl mb-8 relative inline-block;
+  }
+  
+  .section-heading:after {
+    @apply content-[''] absolute -bottom-2 left-0 h-1 w-1/2 bg-primary-500 dark:bg-accent rounded-full;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-dark-600 rounded-xl shadow-md overflow-hidden transition-all duration-300
+           hover:shadow-lg border border-gray-100 dark:border-dark-400;
+  }
+  
+  .code-block {
+    @apply font-mono text-sm p-4 rounded-md bg-gray-100 dark:bg-dark-400
+           border border-gray-200 dark:border-dark-300 overflow-x-auto;
+  }
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 dark:from-accent dark:to-primary-300;
+}
+
+/* Syntax highlighting for code blocks */
+.syntax-comment {
+  @apply text-gray-500 dark:text-gray-400;
+}
+
+.syntax-keyword {
+  @apply text-purple-600 dark:text-purple-400;
+}
+
+.syntax-string {
+  @apply text-green-600 dark:text-green-400;
+}
+
+.syntax-number {
+  @apply text-blue-600 dark:text-blue-400;
+}
+
+.syntax-function {
+  @apply text-yellow-600 dark:text-yellow-400;
+}
