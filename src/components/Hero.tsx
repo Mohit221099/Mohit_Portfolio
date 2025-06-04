@@ -465,7 +465,7 @@ const Hero = () => {
                 <div className="w-full h-full bg-gradient-to-br from-primary-500 via-secondary-500 to-accent rounded-2xl flex items-center justify-center relative overflow-hidden">
                   {/* Your photo */}
                   <img 
-                    src="src/components/assets/Mohit1.jpeg" 
+                    src="\public\assets\Mohit1.jpeg" 
                     alt="Mohit Kumar" 
                     className="w-full h-full object-cover"
                   />

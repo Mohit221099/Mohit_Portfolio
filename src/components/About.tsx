@@ -128,7 +128,7 @@ const About = () => {
             className="w-full lg:w-80 h-96 relative rounded-lg overflow-hidden order-1 lg:order-2 shadow-lg"
           >
             <img
-              src="src/components/assets/m2.jpg"
+              src="\public\assets\m2.jpg"
               alt="Mohit Kumar Cutout"
               className="w-full h-full object-contain bg-transparent"
             />
