@@ -463,12 +463,12 @@ const Hero = () => {
               >
                 {/* Main Photo */}
                 <div className="w-full h-full bg-gradient-to-br from-primary-500 via-secondary-500 to-accent rounded-2xl flex items-center justify-center relative overflow-hidden">
-                  {/* Your photo */}
-                  <img 
-                    src="\public\assets\Mohit1.jpeg" 
-                    alt="Mohit Kumar" 
-                    className="w-full h-full object-cover"
-                  />
+                 {/* Your photo */}
+                <img 
+                 src="https://i.postimg.cc/7Jr2WQPw/Mohit1.jpeg" 
+                 alt="Mohit Kumar" 
+                  className="w-full h-full object-cover"
+                   />
                   
                   {/* Glitch Overlays */}
                   {photoGlitch && (
